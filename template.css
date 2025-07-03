@@ -42,6 +42,15 @@ a {
 sup {
 	font-family: "Cormorant Garamond";
 	font-size: 32px;
+	line-height: inherit;
+	vertical-align: baseline;
+}
+
+small {
+	font-family: "Cormorant Garamond";
+	font-size: 16px;
+	line-height: inherit;
+	vertical-align: baseline;
 }
 
 img {
@@ -63,7 +72,7 @@ div.note p {
 .title {
 	font-family: 'Cinzel Decorative';
 	text-align: center;
-	font-size: clamp(24px, 8vw, 64px);
+	font-size: clamp(24px, 10vw, 64px);
 }
 
 .footer {
