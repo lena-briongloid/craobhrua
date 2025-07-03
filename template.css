@@ -108,6 +108,9 @@ header { position: sticky; text-align: right; margin-right: -50px; bottom: 15px;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	-webkit-overflow-scrolling: touch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .modal-content {
@@ -121,6 +124,8 @@ header { position: sticky; text-align: right; margin-right: -50px; bottom: 15px;
 	transform: translateY(-50%);
 	text-align: center;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin: 0;
+	transform: none;
 }
 
 .close {

@@ -9,19 +9,25 @@
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gowun+Batang&family=Song+Myung&family=IM+Fell+English+SC&display=swap');
-		html { max-width: 800px; margin: 0 auto; width: 90%; position: relative; }  body { background-color: #FFFDF6; color: #2F0102; font-family: "Gowun Batang"; font-size: 28px; line-height: 200%; text-align: justify; }  h1 { text-align: center; font-family: "Song Myung"; }  h2 { text-align: center; font-family: "IM Fell English SC"; }  h3 { text-align: center; font-family: "Song Myung"; }  hr { border : solid 1px #2F0102; }  a { color: #8F3838; font-weight: bold; text-decoration: none; }  sup { font-family: "Cormorant Garamond"; font-size: 32px; } .title {font-family: 'Cinzel Decorative'; text-align: center; font-size: clamp(24px, 8vw, 64px);} img { text-align: center; width: 50%; margin-top: 20px; margin-bottom: 2px; }  .note { font-size: 20px; line-height: 180%; }  div.note p { margin-block-end: -10px; }  .footer { font-size: 14px; line-height: 100%; text-align: right; }  header { position: sticky; text-align: right; margin-right: -50px; bottom: 15px; font-size: 20pt; } @media (max-width: 770px) { header { position: sticky; text-align: right; margin-right: 0px; bottom: 15px; font-size: 20pt; } }  .tooltip { position: fixed; background-color: #333; color: white; padding: 8px 12px; border-radius: 4px; font-size: 20px; z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.2s ease; pointer-events: none; max-width: 640px; text-align: justify; }  .tooltip.show { opacity: 1; visibility: visible; }  .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); -webkit-overflow-scrolling: touch; }  .modal-content { background-color: white; margin: 50% auto; padding: 20px; border-radius: 8px; width: 80%; max-width: 300px; position: relative; transform: translateY(-50%); text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }  .close { position: absolute; right: 10px; top: 5px; font-size: 24px; font-weight: bold; cursor: pointer; color: #aaa; line-height: 1; padding: 5px; }  .close:hover, .close:active { color: #000000; }  @media (max-width: 768px) { .tooltip { display: none !important; visibility: hidden !important; }  .modal { display: none; } }  @media (min-width: 769px) { .modal { display: none !important; } }  @media (max-width: 768px) {.modal-content { margin: 40% auto; width: 90%; font-size: 24px; line-height: 150%; max-width: 350px; text-align: justify; } }
+		html { max-width: 800px; margin: 0 auto; width: 90%; position: relative; }  body { background-color: #FFFDF6; color: #2F0102; font-family: "Gowun Batang"; font-size: 28px; line-height: 200%; text-align: justify; }  h1 { text-align: center; font-family: "Song Myung"; }  h2 { text-align: center; font-family: "IM Fell English SC"; }  h3 { text-align: center; font-family: "Song Myung"; }  hr { border : solid 1px #2F0102; }  a { color: #8F3838; font-weight: bold; text-decoration: none; }  sup { font-family: "Cormorant Garamond"; font-size: 32px; }  img { text-align: center; width: 50%; margin-top: 20px; margin-bottom: 2px; }  .note { font-size: 20px; line-height: 180%; }  div.note p { margin-block-end: -10px; }  .title { font-family: 'Cinzel Decorative'; text-align: center; font-size: clamp(24px, 8vw, 64px); }  .footer { font-size: 14px; line-height: 100%; text-align: right; }  header { position: sticky; text-align: right; margin-right: -50px; bottom: 15px; font-size: 20pt; } @media (max-width: 770px) { header { position: sticky; text-align: right; margin-right: 0px; bottom: 15px; font-size: 20pt; } }  .tooltip { position: fixed; background-color: #333; color: white; padding: 8px 12px; border-radius: 4px; font-size: 20px; z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.2s ease; pointer-events: none; max-width: 640px; text-align: justify; }  .tooltip.show { opacity: 1; visibility: visible; }  .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); -webkit-overflow-scrolling: touch; display: flex; align-items: center; justify-content: center; }  .modal-content { background-color: white; margin: 50% auto; padding: 20px; border-radius: 8px; width: 80%; max-width: 300px; position: relative; transform: translateY(-50%); text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin: 0; transform: none; }  .close { position: absolute; right: 10px; top: 5px; font-size: 24px; font-weight: bold; cursor: pointer; color: #aaa; line-height: 1; padding: 5px; }  .close:hover, .close:active { color: #000; }  @media (max-width: 768px) { .tooltip { display: none !important; visibility: hidden !important; }  .modal { display: none; } }  @media (min-width: 769px) { .modal { display: none !important; } }  @media (max-width: 768px) {    .modal-content { margin: 40% auto; width: 90%; font-size: 24px; line-height: 150%; max-width: 350px; text-align: justify; } }
 	</style>
 </head>
 <body>
 	<br>
 	<hr><br>
-	<div class="title" style="font-family: 'Cinzel Decorative'; font-size: 64px; text-align: center;"><a href="https://tumblbug.com/tainbocuailnge" target="_blank">aN RúRaíocht</a></div>
+	<div class="title" style="font-family: 'Cinzel Decorative'; text-align: center;"><a href="https://tumblbug.com/tainbocuailnge" target="_blank">aN RúRaíocht</a></div>
 	<br>
 	<div style="font-family: 'Song Myung'; font-size: 32px; text-align: center;"><a href="https://tumblbug.com/tainbocuailnge" target="_blank">붉은 가지 이야기: 쿠 훌린과 에린의 여왕</a></div>
 	<br>
 	<p style="font-family: 'Song Myung'; text-align: right;"><a href="https://x.com/lena_briongloid" target="_blank">류은결</a> 옮김</p>
 	<hr>
-	<h1>구아레의 탐욕스러운 손님</h1>
+	<div style="text-align: center; line-height: 150%;">
+		<h2 id="toc" style="font-family: 'Song Myung';">목차</h2>
+		<h3><a href="#content_1">I. 구아레의 탐욕스러운 손님</a></h3>
+		<h3><a href="#content_2">II. 두 돼지치기의 다툼</a></h3>
+	</div> 
+	<hr>
+	<h1 id="content_1"><a href="#toc">구아레의 탐욕스러운 손님</a></h1>
 	<h2>Tromdámh Guaire</h2>
 	<hr>
 	<p>&nbsp;&nbsp;«붉은 가지 이야기»에서 가장 중요하며 분량이 많은 이야기는 «쿠알녜의 소 도적<small>Táin Bó Cuailnge</small>»이며, 다른 모든 이야기는 «쿠알녜의 소 도적»의 서장이나 후일담이라고 하여도 지나치지 않다. 이 «쿠알녜의 소 도적»이 오늘날 현전하는 경위에 관한 흥미로운 전설이 전해진다. 이 이야기는 «리스 모르의 서»에 기록된 «구아레의 탐욕스러운 손님<small>Tromdámh Guaire</small>»과 «라인의 서»에 기록된 «쿠알녜의 소 도적의 현전<small>De Faillsigud Tána Bó Cuailnge</small>»을 조합하여 재구성한 것이다.</p>
@@ -71,7 +77,7 @@
 	<p>&nbsp;&nbsp;“그대가 이 일을 해내었으니 나는 시인들을 더는 저주하지 않겠소. 그러나 그대들 또한 더 이상 떼 지어 몰려다니며 행패를 부리지 않고 각자의 고향으로 돌아가 마땅히 하여야 할 본분만을 다하며 살겠다고 맹세하시오.”</p>
 	<p>&nbsp;&nbsp;그리하여 시인의 집에 모여 샤나한을 추종하던 이들이 모두 고향으로 흩어졌다. 그로부터 에린 전역의 올루들은 각자의 고장에 정착하여 시를 짓고 노래를 부르며 조용히 살게 되었다.</p>
 	<br><hr>
-	<h1>두 돼지치기의 다툼</h1>
+	<h1 id="content_2"><a href="#toc">두 돼지치기의 다툼</a></h1>
 	<h2>De Chophur in Dá Mucado</h2>
 	<hr>
 	<p>&nbsp;&nbsp;«붉은 가지 이야기»의 모든 장대한 서사는 두 돼지치기의 다툼에서 시작한다. 이 돼지치기들이 왜 다투었는가? «라인의 서»에 다음과 같이 기록되어 있다.</p>
@@ -85,7 +91,7 @@
 	<p>&nbsp;&nbsp;“무운으로 다녀온 날이 재수 없는 날이었군그려. 자네 친구의 힘이 자네보다 더 대단한 것이 틀림없네.”</p>
 	<p>&nbsp;&nbsp;“허튼 소리! 다음에 여기에 먹이가 더 많은 날이 오면 나도 프류흐에게 같은 장난을 쳐 보이겠소.”</p>
 	<p>&nbsp;&nbsp;그리하여 얼마 지나지 않아 프류흐가 그의 돼지를 데리고 북쪽 코나흐타로 왔을 때, 루흐트는 무운의 돼지들에게 마법을 걸어 아무리 많이 먹어도 한없이 야위기만 하게 만들었다. 이 모습을 본 사람들이 그제야 두 사람의 힘이 대등하다는 데에 동의하였다. 형편없이 야윈 돼지를 보고 무운의 왕 보브가 프류흐를 파직하였고, 코나흐타의 왕 오할도 루흐트를 파직하였다.</p>
-	<p>&nbsp;&nbsp;두 사람은 이 일로 크게 화가 나 독수리로 변신하여 첫 해는 크루아한의 요새에서, 둘째 해는 페뱐 들판의 요정 언덕에서 보냈다. 어느 날 무운 사람들의 페뱐 들판에 모여서 불평하였다.</p>
+	<p>&nbsp;&nbsp;두 사람은 이 일로 크게 화가 나 독수리로 변신하여 첫 해는 크루아한의 요새에서, 둘째 해는 페뱐 들판의 요정 언덕에서 보냈다. 어느 날 무운 사람들이 페뱐 들판에 모여서 불평하였다.</p>
 	<p>&nbsp;&nbsp;“저 새들이 울어 대는 소리가 너무 끔찍하여 버티기 힘들군. 한 해 내내 저 자리에 앉아서 다투기를 멈추지 않으니!”</p>
 	<p>&nbsp;&nbsp;이때 오할의 신하인 피아미레<small>Fiadmire</small>의 아들 피엘<small>Fuidell</small>이 언덕 너머에서 다가왔다. 무운 사람들이 그를 환영하는 와중에도 두 독수리는 다투기를 멈추지 않았다. 이를 듣고 피엘이 말하였다.</p>
 	<p>&nbsp;&nbsp;“저기서 시끄럽게 울어 대는 두 마리 새는, 맹세컨대, 틀림없이 작년에 내가 북쪽에서 본 바로 그 두 새일 게요. 그곳에서도 한 해 내내 울어 대기를 멈추지 않았으니 말이오.”</p>
@@ -230,10 +236,10 @@
 					modalContentText.textContent = content;
 				}
 				
-				modal.style.display = 'block';
+				modal.style.display = 'flex';
 				document.body.style.overflow = 'hidden';
 			}
-			
+
 			function hideModal() {
 				if (modal) {
 					modal.style.display = 'none';
