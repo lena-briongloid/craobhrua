@@ -60,6 +60,12 @@ div.note p {
 	margin-block-end: -10px;
 }
 
+.title {
+	font-family: 'Cinzel Decorative';
+	text-align: center;
+	font-size: clamp(24px, 8vw, 64px);
+}
+
 .footer {
 	font-size: 14px;
 	line-height: 100%;
